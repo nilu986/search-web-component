@@ -244,8 +244,7 @@
             super();
             console.log('New Acronym search object has been instantiated.');
             const shadowRoot = this.attachShadow({ mode: 'open' });
-            const htmlTemplate = importDoc.querySelector('template');
-            shadowRoot.innerHTML = htmlTemplate.innerHTML;
+            shadowRoot.appendChild(template.content.cloneNode(true));
             this.searchButton = this.shadowRoot.querySelector('button');
             this.searchButton.addEventListener('click', this._acronymSearch.bind(this));
         }
