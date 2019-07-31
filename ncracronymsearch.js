@@ -170,6 +170,7 @@
             height: 35px;
             padding: 5px;
             margin: 5px;
+            box-sizing: border-box;
         }
 
         .width{
@@ -315,11 +316,13 @@
             font-size: 23px;
             font-weight: bolder;
             padding: 5px;
+            box-sizing: border-box;
         }
      
         .modal-body{
-            height:275px;
+            height:305px;
             padding: 10px;
+            box-sizing: border-box;
         }
 
         .closeMore {
