@@ -37,9 +37,9 @@
             </div>
             <div class="modal-body">
                 <input class="myInput" type="text" id="myInput1" maxlength="10" placeholder="Acronym..." required>
-                <input class="myInput" type="text" id="myInput2" maxlength="30" placeholder="Fullform..." required>
-                <input class="myInput width" type="text" id="myInput3" maxlength="50" placeholder="Short Description..." required>
-                <textarea class="detailedDescription" id="myInput4" maxlength="200" placeholder="Detailed Description..." ></textarea>
+                <input class="myInput" type="text" id="myInput2" maxlength="50" placeholder="Fullform..." required>
+                <input class="myInput width" type="text" id="myInput3" maxlength="150" placeholder="Short Description..." required>
+                <textarea class="detailedDescription" id="myInput4" maxlength="500" placeholder="Detailed Description..." ></textarea>
                 <button id="addButton" type="button">Add</button>
             </div>
         </div>   
@@ -165,7 +165,6 @@
             color: lightslategray;
             align-items: center;
         }
-
         .myInput {
             height: 35px;
             padding: 5px;
@@ -311,16 +310,16 @@
         }
 
         .modal-header{
-            background: #55d5ff;
+            background: #555;
             color: white;
             font-size: 23px;
             font-weight: bolder;
-            padding: 5px;
+            padding: 10px;
             box-sizing: border-box;
         }
      
         .modal-body{
-            height:305px;
+            height:325px;
             padding: 10px;
             box-sizing: border-box;
         }
@@ -565,5 +564,5 @@
     //     }, 1000);
     //   }
 
-    window.customElements.define('acronym-search-ncr', AcronymSearchNCR);
+    window.customElements.define('ncr-acronym', AcronymSearchNCR);
    })();
