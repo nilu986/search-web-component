@@ -357,8 +357,8 @@
             const shadowRoot = this.attachShadow({
                 mode: 'open'
             });
-            const htmlTemplate = importDoc.querySelector('template');
-            shadowRoot.innerHTML = htmlTemplate.innerHTML;
+            shadowRoot.appendChild(template.content.cloneNode(true));
+            
             this.createSelectors();
             this.bindEventListeners();
         }
