@@ -7,7 +7,7 @@
     <div class="chat-popup rightbottom" style="display: none;" id="myForm">
         <span id="closeChatPopup" class="closeChatPopup">&times;</span>
         <div class="form-container">
-            <span id="toggleModalButton" class="addAcronym" title="Add Acronym">+</span>
+            <span>Acronym Finder</span>&nbsp;|&nbsp;<span id="toggleModalButton" class="addAcronym" title="Add Acronym">Add</span>
         </div>
         <div id="search" class="form-container">
             <input type="text" class="myInput" placeholder="Search here..." required>
@@ -125,15 +125,8 @@
             right: 28px;
         }
 
-        .addAcronym {
-            font-size: 25px;
-            background-color: lightblue;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            line-height: 0.8;
-            color: #4343a0;
+        .form-container span.addAcronym {
+            color: #4CAF50;
             font-weight: bold;
             text-decoration: none;
             cursor: pointer;
@@ -164,6 +157,13 @@
             max-width: 300px;
             padding: 10px;
             background-color: white;
+        }
+        .form-container span{
+            font-family: Arial;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: lightslategray;
+            align-items: center;
         }
 
         .myInput {
