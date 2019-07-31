@@ -494,6 +494,9 @@
             if (this.popUp.style.display == "block") {
                 this.popUp.style.display = "none";
                 this.widgetButton.style.display = "block";
+                this.inputField.value = "";
+                this.readMoreContent.style.display = "none";
+                let li = this.shadowRoot.querySelector('li').style.display = "none";
             }
 
         }
